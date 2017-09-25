@@ -82,7 +82,7 @@ Plugin.prototype.apply = function(compiler) {
           }
           assets.push(F);
         });
-        chunks[DEFAULT_ASSET_CHUNK_NAME] = assets;
+        chunks[self.options.assetsChunkName] = assets;
       }
 
       var output = {
